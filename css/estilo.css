@@ -1,0 +1,161 @@
+/* esta version fue todo un exito!*/
+body {
+  background-color: #f3e7d9;
+}
+
+.wrapper1 {
+  display: grid;
+  grid-template-columns: repeat(11,1fr);
+  grid-gap: 0;
+  grid-auto-rows: minmax(80px, auto);
+  /*grid-template-rows: (5);*/
+}
+
+.foto1 {
+  grid-column: 1 / 9;
+  grid-row: 1/5;
+  background: url('../img/25060.jpg');
+  background-size: cover;
+}
+
+.degraizq{
+  grid-column: 3/8 ;
+  grid-row: 1/5;
+  background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1))
+}
+.colorder {
+  grid-column: 8 / 12;
+  grid-row: 1/5;
+  background: rgba(255,255,255,1);
+}
+.espacio {
+  grid-column: 2/6;
+  grid-row: 1/5; 
+
+}
+/*.Bienvenida {
+  display: inline-block;
+  max-width: 80%;
+  grid-column: 3 / 12;
+  grid-row: 1/5;
+  padding: 65px;
+  position: absolute;
+}*/
+
+
+.Logo {
+  grid-column: 6 / 11;
+  grid-row: 2/3;
+  padding: 0 0 20px 0;
+}
+
+.Textobienvenida {
+  grid-column: 6/11;
+  grid-row: 3/5; 
+  line-height: 2.2;
+  color: #0b0a34;
+  font-weight: 500;
+}
+
+.wrapper2 {
+  display: grid;
+  grid-template-columns: repeat(12);
+  grid-gap:  0;
+  grid-auto-rows: minmax(80px, auto);
+}
+
+.foto {
+  grid-column: 4 / 12;
+  grid-row: 1/5;
+  background: url('../img/64857.jpg');
+  background-size: cover;
+}
+.degrader {
+  grid-column: 5/ 10;
+  grid-row: 1/5;
+  background: linear-gradient(to left, rgba(202,93,64,0), rgba(202,93,64,1));
+}
+.color{
+  grid-column: 1 / 5;
+  grid-row: 1/5;
+  background: rgba(202,93,64,1);
+}
+
+.Inicio {
+  max-width: 80%;
+  line-height: 2.2;
+  padding: 105px;
+  grid-column: 1/8;
+  grid-row: 1/5;
+  color: #0b0a34;
+  font-weight: 500;
+}
+
+
+
+@media screen and (max-width:992px) {
+
+
+.foto1 {
+  grid-column: 1/12;
+  grid-row: 1/4;
+  background: rgba(255,255,255,1);
+}
+.degraizq {
+  grid-column: 1/12;
+  grid-row: 4/8;
+  background: url('../img/25060.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.colorder {
+  grid-column: 1/12;
+  grid-row: 4/8;
+  background: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+
+.Logo {
+  grid-column:2/11;
+  grid-row: 2/3;
+}
+
+.Logo img {
+  width: 100%;
+}
+.Textobienvenida {
+  grid-column: 2/10;
+  grid-row: 3/7;
+}
+
+
+.foto {
+  grid-column: 1/12;
+  grid-row: 1/4;
+  background: rgba(202,93,64,1);
+}
+.degrader  {
+  grid-column: 1/12;
+  grid-row: 4/8;
+  background: url('../img/64857.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.color {
+  grid-column: 1/12;
+  grid-row: 4/8;
+  background: linear-gradient(to bottom, rgba(202,93,64,1), rgba(202,93,64,0));
+} 
+
+.Inicio {
+  max-width: 100%;
+  line-height: 2;
+  padding: 36px;
+  grid-column: 1/8;
+  grid-row: 1/5;
+}
+} 
+
+
+
